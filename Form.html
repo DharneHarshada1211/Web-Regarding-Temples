@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--contaier part is important for transparency--><style>
+    *{
+        background-color: rgb(242, 223, 245);
+    }
+    .container{
+        width: 700px;
+        height: 450px;
+        color: rgb(12, 12, 12);
+        background:rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        border: 3px solid rgb(255, 9, 50);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .p{
+    background-color: rgb(190, 174, 192);
+    }
+nav{
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+  color: black;
+}
+
+nav a {
+  color: #140202;
+  text-decoration: none;
+  padding: 1em;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #555;
+  color: #fff;
+}
+#btn{
+color: white;
+background: black;
+}
+</style>
+    
+</head>
+<body>
+<form class="container"> 
+    <h2>Registeration Form</h2>
+    <p>Name:<input type="text" name="name" id="name"></p>
+    <p>Destination:<input type="text" name="place" id="place"></p>
+    <p>Mobile Number:<input type="number" name="number" id="number"></p>
+    <p>Genderer:Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required>Other <input type="radio" name="gender" id="other" required></p>
+    <p>Birthdate:<input type="date" name="bdate" id="bdate"></p>
+    <p>Adharcard:<input type="file" name="acard" id="acard"></p>
+    <p>Pancard:<input type="file" name="pcard" id="pcard"></p>
+    <input id="btn" type="submit" value="Register"><br>
+    </form> 
+    <nav>
+        <a href="Journey.html">Journey Details</a>
+        <a href="Form.html">Registeration</a>
+        <a href="Details.html">Founder Details</a>
+    </nav>
+</body>
+</html>
